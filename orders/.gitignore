@@ -1,0 +1,42 @@
+# .gitignore
+
+# Python-related files
+*.py[cod]
+__pycache__/
+*.so
+*.egg
+*.egg-info/
+*.pyo
+
+# Virtual environment
+venv/
+env/
+*.env  # Ignore .env file with sensitive data
+
+# Database
+db.sqlite3
+
+# Django migration files
+*.log
+*.pot
+*.pyc
+*.pyo
+*.pyd
+*.db
+*.sqlite3
+
+# Media files (optional)
+media/
+
+# Static files
+/static/
+
+# Ignore IDE/editor settings
+.vscode/
+.idea/
+
+# Ignore bytecode and cache files
+__pycache__/
+
+# Ignore MacOS hidden files
+.DS_Store

@@ -1,0 +1,14 @@
+Hello {{ order.first_name }},
+
+Thank you for your order. Your order ID is {{ order.id }}.
+
+Order details:
+{% for item in order.items.all %}
+- {{ item.product.name }}: {{ item.quantity }} x ${{ item.price }}
+{% endfor %}
+
+Total: ${{ order.get_total_cost }}
+
+We will notify you once your order has been shipped.
+
+Thank you for shopping with us!

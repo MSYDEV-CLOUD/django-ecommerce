@@ -1,0 +1,26 @@
+/* Ensure html and body take full height */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%; /* Make sure the body takes the full viewport height */
+}
+
+/* Make the body a flex container */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Full height of the viewport */
+}
+
+/* The main content should grow to take the available space */
+main {
+    flex: 1; /* This makes the main content take up any remaining space */
+    padding: 20px; /* Optional padding */
+}
+
+/* Footer styles */
+footer {
+    background-color: #f1f1f1;
+    text-align: center;
+    padding: 10px;
+}
