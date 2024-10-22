@@ -1,4 +1,4 @@
-{% load static %} 
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,9 +10,16 @@
 </head>
 <body>
 
+    <!-- Banner -->
+    <div class="banner">
+        <h1>Welcome to Our E-commerce Store!</h1>
+        <!-- You can add an image or additional text here if needed -->
+    </div>
+
+    <!-- Navigation -->
     <header>
-        <nav>
-            <ul>
+        <nav class="navbar">
+            <ul class="nav-list">
                 <li><a href="{% url 'home' %}">Home</a></li>
                 <li><a href="{% url 'products:product_list' %}">Shop</a></li>
                 {% if user.is_authenticated %}
@@ -31,12 +38,14 @@
         </nav>
     </header>
 
+    <!-- Main Content -->
     <main>
         {% block content %}
         <!-- Content from other templates will go here -->
         {% endblock %}
     </main>
 
+    <!-- Footer -->
     <footer>
         <p>&copy; 2024 E-commerce Website. All rights reserved.</p>
     </footer>

@@ -2,7 +2,7 @@
 html, body {
     margin: 0;
     padding: 0;
-    height: 100%; /* Make sure the body takes the full viewport height */
+    height: 100%; /* Full height of viewport */
 }
 
 /* Make the body a flex container */
@@ -12,10 +12,57 @@ body {
     min-height: 100vh; /* Full height of the viewport */
 }
 
-/* The main content should grow to take the available space */
+/* Banner styles */
+.banner {
+    background-color: #f1f1f1;
+    text-align: center;
+    padding: 0px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Navbar styles */
+.navbar {
+    background-color: #333;
+    padding: 10px 0;
+}
+
+/* Ensure nav links are displayed horizontally and evenly spread */
+.nav-list {
+    display: flex;                  /* Use Flexbox */
+    justify-content: space-between;  /* Evenly spread the items across the page */
+    align-items: center;             /* Vertically align items to the center */
+    list-style: none;                /* Remove bullet points */
+    margin: 0;                       /* Remove default margin */
+    padding: 0 40px;                 /* Add padding to the left and right for spacing */
+    width: 100%;                     /* Ensure the nav list takes full width */
+}
+
+/* Nav links styling */
+.nav-list li {
+    flex-grow: 1;                    /* Make each item take equal space */
+    text-align: center;               /* Center the text */
+}
+
+.nav-list a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+    font-size: 24px;  /* Increase the font size for the nav links */
+}
+
+/* Hover effect for nav links */
+.nav-list a:hover {
+    background-color: #575757;
+    transition: background-color 0.3s;
+}
+
+
+/* Ensure the main content takes the remaining space */
 main {
-    flex: 1; /* This makes the main content take up any remaining space */
-    padding: 20px; /* Optional padding */
+    flex: 1;
+    padding: 20px;
 }
 
 /* Footer styles */
